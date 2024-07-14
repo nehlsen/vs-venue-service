@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: 'VenueService'
+  jpa:
+    properties:
+      hibernate:
+        dialect: 'org.hibernate.dialect.MySQLDialect'
+    hibernate:
+      ddl-auto: 'update'
+  datasource:
+    driver-class-name: 'com.mysql.cj.jdbc.Driver'
+    username: 'root'
+    password: 'secret'
+    url: 'jdbc:mysql://venue-service-database:3306/venue-service?createDatabaseIfNotExist=true'
